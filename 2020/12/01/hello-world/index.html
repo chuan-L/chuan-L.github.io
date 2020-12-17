@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <title>
-        Vim 使用说明 |
+        使用hexo创建github pages |
         
         0|1
     </title>
@@ -153,7 +153,7 @@
     <div class="article-content-container">
 
         <div class="article-title">
-            <span class="title-hover-animation">Vim 使用说明</span>
+            <span class="title-hover-animation">使用hexo创建github pages</span>
         </div>
 
         
@@ -169,7 +169,7 @@
                     <div class="meta-info">
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
-        <i class="fas fa-calendar"></i> 2020-12-08 22:19:45
+        <i class="fas fa-calendar"></i> 2020-12-01 22:19:45
     </span>
     
         <span class="article-categories article-meta-item">
@@ -177,7 +177,7 @@
             <ul>
                 
                     <li>
-                        <a href="/categories/linux/">linux</a>
+                        <a href="/categories/%E5%85%B6%E4%BB%96/">其他</a>
                     </li>
                 
             </ul>
@@ -189,7 +189,11 @@
             <ul>
                 
                     <li>
-                        <a href="/tags/vim/">vim</a>
+                        <a href="/tags/hexo/">hexo</a>
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/git/">git</a>
                     </li>
                 
             </ul>
@@ -199,7 +203,7 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fas fa-file-word"></i> <span>430 Words</span>
+            <i class="fas fa-file-word"></i> <span>259 Words</span>
         </span>
     
     
@@ -220,11 +224,11 @@
         
 
         <div class="article-content markdown-body">
-            <p>vim两种模式，insert和normal模式，normal就是命令模式，insert就是编辑模式。</p>
-<p>参考<a class="link"   target="_blank" rel="noopener" href="https://coolshell.cn/articles/5426.html" >https://coolshell.cn/articles/5426.html<i class="fas fa-external-link-alt"></i></a></p>
-<p>非常全的：<a class="link"   target="_blank" rel="noopener" href="https://vim.rtorr.com/lang/zh_cn" >https://vim.rtorr.com/lang/zh_cn<i class="fas fa-external-link-alt"></i></a></p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 插入模式</span></span><br><span class="line">i	光标前插入</span><br><span class="line">a	光标后插入，append</span><br><span class="line">o	在当前行后插入一个新行</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">移动</span></span><br><span class="line">0	行前</span><br><span class="line">^	本行第一个非空白字符</span><br><span class="line"><span class="meta">$</span><span class="bash">	本行最后一个字符</span></span><br><span class="line">/pattern	搜索pattern，回车后，按n到下一个</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 粘贴拷贝</span></span><br><span class="line">dd	删除当前行，并存入剪切板</span><br><span class="line">p 	粘贴剪切板</span><br><span class="line">yy	拷贝当前行，等于ddp</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 撤回</span></span><br><span class="line">u	undo</span><br><span class="line">ctrl+r	redo</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 打开保存退出</span></span><br><span class="line">:e &lt;filename&gt; 打开文件</span><br><span class="line">:w	保存</span><br><span class="line">:saveas &lt;name&gt; 另存为</span><br><span class="line">:bn	切换到下一个文件 next</span><br><span class="line">:bp	切换到上一个文件 pre</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 高级</span></span><br><span class="line">.	重复上一次命令</span><br><span class="line">N&lt;command&gt;	重复N次</span><br><span class="line">3dd	删除3行</span><br><span class="line">5p	粘贴5次</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 移动</span></span><br><span class="line">:set nu	显示行</span><br><span class="line">gg	移动到第一行</span><br><span class="line">G	移动到最后一行</span><br><span class="line">:12	移动到第12行</span><br><span class="line">w	下一个单词开头</span><br><span class="line">e	下一个单词结尾，若在当前单词中间，就移动到当前单词结尾</span><br><span class="line">b	当前单词开头</span><br><span class="line"><span class="meta">%</span><span class="bash">	在括号上使用，移动到匹配的另一个括号</span></span><br><span class="line">*	移动到和当前单词相同的下一个单词</span><br><span class="line"><span class="meta">#</span><span class="bash">	移动到和当前单词相同的上一个单词</span></span><br><span class="line"></span><br><span class="line">&lt;start position&gt;&lt;command&gt;&lt;end position&gt;</span><br><span class="line"><span class="meta">0y$</span><span class="bash">	从行开头复制到行结尾</span></span><br><span class="line">ye	从当前位置拷贝到本单词的最后一个字符</span><br><span class="line">yb	从当前位置前一个次方拷贝到本单词的第一个字符</span><br><span class="line"></span><br><span class="line">v 进入可视化</span><br><span class="line">v 方向键选择，然后y，可以范围复制</span><br><span class="line">v 方向键选择，然后d，可以范围删除</span><br></pre></td></tr></table></figure>
+            <p>hexo：一个使用简单的博客框架，通过md文件生成静态页面。<br>Travis CI：持续集成工具，检测到github上的提交后，自动执行脚本，更新静态页面<br>hexo主题：<a class="link"   target="_blank" rel="noopener" href="https://github.com/XPoet/hexo-theme-keep" >ILS<i class="fas fa-external-link-alt"></i></a></p>
+<p>创建两个分支，main和gp-pages，main存放所有文件，gh-pages存放生成的页面，同时在settings里面将gh-pages设置为github Pages的默认分支。<br>使用时，只需要git上传md文件，travis就会自动执行脚本，更新gh-pages分支内容。</p>
+<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 创建</span></span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 本地生成</span></span><br><span class="line">$ hexo g </span><br><span class="line"></span><br><span class="line"><span class="comment"># 本地演示</span></span><br><span class="line">$ hexo server</span><br><span class="line"></span><br><span class="line"><span class="comment"># 上传</span></span><br><span class="line">$ git push origin main</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
+<h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">push代码后，打开blog页面，发现是一片空白。看gh-pages里面生成的代码，是空的。本地hexo generate是没有问题的。</span><br><span class="line">检查main分支的themes下的ils，是空的。且ils文件夹有一个白色箭头，代表一个子模块。</span><br><span class="line">重新git add themes/ils，出现错误。</span><br><span class="line">fatal: <span class="keyword">in</span> unpopulated submodule <span class="string">&#x27;themes/ils&#x27;</span></span><br><span class="line">git rm -rf themes/ils</span><br><span class="line"></span><br><span class="line">删掉ils，再重新添加，解决。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
         </div>
 
@@ -232,11 +236,11 @@
             <div class="post-copyright-info">
                 <div class="article-copyright-info-container">
     <ul>
-        <li>Post title：Vim 使用说明</li>
+        <li>Post title：使用hexo创建github pages</li>
         <li>Post author：chuan</li>
-        <li>Create time：2020-12-08 22:19:45</li>
+        <li>Create time：2020-12-01 22:19:45</li>
         <li>
-            Post link：http://example.com/2020/12/08/Vim-使用说明/
+            Post link：http://example.com/2020/12/01/hello-world/
         </li>
         <li>
             Copyright Notice：All articles in this blog are licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> unless stating additionally.
@@ -253,33 +257,18 @@
                     <div class="article-prev">
                         <a class="prev"
                            rel="prev"
-                           href="/2020/12/17/flask%E7%BB%93%E5%90%88nacos%E5%92%8CGraphQL%E6%9E%84%E5%BB%BA%E5%BE%AE%E6%9C%8D%E5%8A%A1/"
+                           href="/2020/12/08/Vim-%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/"
                         >
                             <span class="left arrow-icon flex-center" >
                               <i class="fas fa-chevron-left"></i>
                             </span>
                             <span class="title flex-center">
-                                <span class="post-nav-title-item">flask结合nacos和GraphQL构建微服务</span>
+                                <span class="post-nav-title-item">Vim 使用说明</span>
                                 <span class="post-nav-item">Prev posts</span>
                             </span>
                         </a>
                     </div>
                 
-                
-                    <div class="article-next">
-                        <a class="next"
-                           rel="next"
-                           href="/2020/12/01/hello-world/"
-                        >
-                            <span class="title flex-center">
-                                <span class="post-nav-title-item">使用hexo创建github pages</span>
-                                <span class="post-nav-item">Next posts</span>
-                            </span>
-                            <span class="right arrow-icon flex-center" >
-                              <i class="fas fa-chevron-right"></i>
-                            </span>
-                        </a>
-                    </div>
                 
             </div>
         
@@ -396,7 +385,7 @@
         
             <div class="post-toc-wrap">
     <div class="post-toc">
-        
+        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8"><span class="nav-number">1.</span> <span class="nav-text">使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%97%AE%E9%A2%98"><span class="nav-number">2.</span> <span class="nav-text">问题</span></a></li></ol>
     </div>
 </div>
         
